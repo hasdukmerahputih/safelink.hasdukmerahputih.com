@@ -413,6 +413,62 @@ auto_safelink();
           </div>
         </div>
       </div>
+      <div aria-hidden='true' aria-labelledby='myModalLabel' class='modal fade sitemaps' id='myModal2' role='dialog'
+        tabindex='-1'>
+        <div class='modal-dialog modal-lg' role='document'>
+          <div class='modal-content'>
+            <div class='modal-header'>
+              <button aria-label='Close' class='close' data-dismiss='modal' type='button'><span
+                  aria-hidden='true'>&#215;</span></button>
+              <h4 class='modal-title' id='myLargeModalLabel2'>Sitemaps</h4>
+            </div>
+            <div class='modal-body text-left'>
+              <div id='table-outer'>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label for='feed-order'>Urutkan artikel berdasarkan:</label>
+                      </td>
+                      <td>
+                        <select id='feed-order'>
+                          <option selected='' value='published'>Artikel terbaru</option>
+                          <option value='updated'>Artikel yang terakhir di update</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for='label-sorter'>Filter artikel berdasarkan kategori:</label>
+                      </td>
+                      <td>
+                        <select disabled='' id='label-sorter'>
+                          <option selected=''>Loading....</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for='feed-q'>Cari artikel dengan kata kunci:</label>
+                      </td>
+                      <td>
+                        <form id='post-searcher'>
+                          <input id='feed-q' placeholder='Ketik dan tekan ENTER' type='text' />
+                        </form>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class='alert alert-success' id='result-desc' role='alert'></div>
+              <div class='row'>
+                <ul id='feed-container'></ul>
+              </div>
+              <button class='btn btn-primary' id='feed-nav' type='button'></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer class='footer'>
       <div class='container'>
